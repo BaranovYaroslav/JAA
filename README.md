@@ -1,2 +1,10 @@
 # JAA
-Java Algorithm API
+
+Contains implementation of next algorithms:
+
+- Data compessing:
+  - Huffman Coding;
+  
+- Sorting: 
+
+- Search:
