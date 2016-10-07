@@ -2,6 +2,7 @@ package CompressionAlgorithms;
 
 import java.util.ArrayList;
 
+// Container of codes for characters
 public class EncodedData{
 
     private ArrayList<SymbolCode> data;
