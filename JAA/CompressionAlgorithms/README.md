@@ -1,0 +1,2 @@
+Compression algorithms:
+ - Huffman coding;
