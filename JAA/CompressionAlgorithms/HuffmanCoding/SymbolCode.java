@@ -2,6 +2,7 @@ package CompressionAlgorithms;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+// Code of symbol represented by bit(boolean) array
 public class SymbolCode {
 
     private boolean[] code;

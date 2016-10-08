@@ -2,6 +2,7 @@ package CompressionAlgorithms;
 
 import java.util.*;
 
+// Implementation of Huffman coding
 public class HuffmanCoding {
 
     private String alphabet;
