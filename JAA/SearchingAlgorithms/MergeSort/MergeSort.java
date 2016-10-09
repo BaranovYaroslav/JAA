@@ -4,20 +4,22 @@ import java.util.Comparator;
 
 public class MergeSort<T extends Comparable<T>> {
 
+    private Comparator<T> defaultComparator = new Comparator<T>() {
+        @Override
+        public int compare(T el1, T el2) {
+            return el1.compareTo(el2);
+        }
+    };
+
     public T[] sort(T[] array) {
-        return sort(array, new Comparator<T>() {
-            @Override
-            public int compare(T el1, T el2) {
-                return el1.compareTo(el2);
-            }
-        });
+        return sort(array, defaultComparator);
     }
 
     public T[] sort(T[] array, Comparator<T> comparator) {
         if(array.length <= 1 ){
             return array;
         }
-        
+
         T[] leftPart =  (T[]) new Comparable[array.length / 2];
         T[] rightPart = (T[]) new Comparable[array.length -  leftPart.length];
 
