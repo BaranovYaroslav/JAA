@@ -2,18 +2,17 @@ package SearchingAlgorithms;
 
 import java.util.Comparator;
 
-/**
- * Created by Ярослав on 09.10.2016.
- */
-public class BubbleSort<T extends Comparable> {
+public class BubbleSort<T extends Comparable<T>> {
+
+    private Comparator<T> defaultComparator = new Comparator<T>() {
+        @Override
+        public int compare(T el1, T el2) {
+            return el1.compareTo(el2);
+        }
+    };
 
     public T[] sort(T[] array) {
-        return sort(array, new Comparator<T>() {
-            @Override
-            public int compare(T el1, T el2) {
-                return el1.compareTo(el2);
-            }
-        });
+        return sort(array, defaultComparator);
     }
 
     public T[] sort(T[] array, Comparator<T> comparator) {
@@ -30,3 +29,4 @@ public class BubbleSort<T extends Comparable> {
     }
 
 }
+
