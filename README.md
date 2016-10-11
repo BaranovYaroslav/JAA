@@ -13,3 +13,4 @@ Contains implementation of next algorithms:
   - Quick sort;
   
 - Search:
+  - Binary search;
