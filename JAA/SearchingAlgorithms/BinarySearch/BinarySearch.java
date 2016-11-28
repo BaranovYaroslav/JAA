@@ -10,7 +10,6 @@ public class BinarySearch{
 
         while (low <= high) {
             middle = (low + high) / 2;
-            System.out.println(5/2);
             if(array[middle] == element){
                 index = middle;
                 break;
